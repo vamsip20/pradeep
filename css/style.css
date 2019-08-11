@@ -1,0 +1,219 @@
+
+:root{
+--color-first: #18a7c5;
+--color-second: #5e3d22;
+--color-third:#cdcdcd;
+}
+html {
+    scroll-behavior: smooth; overflow-x: hidden;
+  }
+
+  /* menu bar section  */
+
+.navbar {    position: sticky;    top: 0;    z-index: 1000;}
+.navbar-collapse .active {    border-bottom: 2px solid var(--color-first);}
+.navbar-brand{margin-right: 0px;     max-width: 25%;}
+.navbar-brand img{max-width: 25%;    padding-right: 5%;}
+.navbar-brand text{padding-left: 15%;}
+.navbar-nav li{ margin:3% ;}
+.navbar-nav li a{ color:var(--color-second);    font-weight: 700;}
+.login-links,.social-links{display: inline;}
+.social-links {float:right;}
+.social-login a{color:#fff !important;  padding:0px 15px;}
+.header-top {background-color: var(--color-first);}
+.pipe::before {content:'|'; color:#fff;}
+
+.navbar-brand .text {
+    font-weight: 500;
+    color: var(--color-first);
+    font-size: 1.2rem;
+}
+.navbar-collapse{ padding-left: 10%;}
+
+.carousel-caption {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    }
+#contact{background-color: var(--color-third); color:#fff;}
+#services{background-color:var(--color-third);}
+
+/* footer css */
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #fff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+.logo_text {
+    color: var(--color-first);
+    font-size: 2rem;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px #fff;
+}
+
+
+/* .social-inner {
+    width: 100%;
+    padding: 23px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.social-inner:hover{text-decoration: none;  font-weight: 800;} */
+
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.brand img {max-width: 30%;}
+
+.carousel-item img {    width: 100%;    height: auto;}
+
+#about img{max-width:100%; padding:10%; padding-top:0%;}
+
+/* services section css  */
+#services {
+    background-image: url('../images/home1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.wrap {
+    display: flex;
+    background-color: var(--color-first);
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition:all 1s;
+}
+
+.wrap:hover {    
+    background: white;
+    box-shadow:0px 0px 10px 2px #777;
+    color: var(--color-second);
+}
+
+.ico-wrap,.vcenter {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+
+.display-5 {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+ .mbr-text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+
+/* portfolio section css  */
+.main-section {padding-top:200px;   padding-bottom: 200px;}
+.popup-gallery img {padding:5%;}
+
+/* testimonials section  */
+.card {
+    margin: 0 auto;
+  }
+ .pb-3.text-center{     text-shadow: 1px 1px 1px #000; }
+.mute {color:#999; font-style: italic; font-size: 0.8rem;}  
+
+/* contact section goes here */
+.sbt {float: right;    width: auto;}
+.input-group-text{ width:50px; font-size:1.5rem; color:var(--color-first);}
+.element.error{ color:red;}
+.element.success{color:green;}
+#contactform {
+    background-color: #d5d5d5;
+    padding: 3rem;  
+    border: 2px solid #d5d5d5; 
+    transition:border ease-in-out;    
+    border-color:#d5d5d5;    
+    transition-duration: 1s; 
+}
+
+#contactform:hover {
+    transition:border ease-in-out;
+    border-color:#fff;
+    transition-duration: 1s;
+}
+/* go to top button goes here */
+    #myBtn {
+        display: none; 
+        position: fixed; 
+        bottom: 20px; 
+        right: 30px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: var(--color-first);
+        color: #fff; 
+        cursor: pointer;         
+        padding: 1% 1.5%;
+        border-radius: 50%;
+        font-size: 2rem; 
+      }
+      
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
+
+/* responsiveness css */
+@media screen and (max-width: 450px) {
+    .social-login a{padding:0px 5px;
+    }
+    .navbar-brand {margin-left:3% !important;}
+    .navbar-brand img{max-width: 75%;}
+    .navbar-brand .text{font-size: 1rem !important;}
+    .card .carousel-item {       height: 230px;      }
+    .card .carousel-item img{       max-width: 20%;      }
+    .logo_text {font-size: 1.5rem;}
+}
+@media screen and (max-width: 340px) {
+    .social-login a{padding:0px;
+    }
+    .navbar-brand {margin-left:0 !important;}
+    .navbar-brand img{max-width: 100%;}
+    .navbar-brand .text{font-size: 0.9rem !important;}
+    .logo_text {font-size: 1.4rem;}
+}
+@media screen and (max-width: 860px) and (min-width:760px){
+    .navbar-brand {max-width: 17%;}
+}
+@media screen and (min-width: 760px) {
+    .carousel img {    min-width: 100%;       height: 600px;      }
+    .carousel-caption { width:30%;}
+    .logo_text {font-size: 1.8rem;}
+}
+@media screen and (min-width: 1080px) {
+    .carousel img {height:700px;}
+}
