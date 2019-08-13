@@ -147,6 +147,10 @@ ul, ol {
  .pb-3.text-center{     text-shadow: 1px 1px 1px #000; }
 .mute {color:#999; font-style: italic; font-size: 0.8rem;}  
 
+/* portfolio section */
+#portfolio {background-color:#f3f3f3;}
+
+
 /* contact section goes here */
 .sbt {float: right;    width: auto;}
 .input-group-text{ width:50px; font-size:1.5rem; color:var(--color-first);}
