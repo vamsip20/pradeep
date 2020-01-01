@@ -1,3 +1,4 @@
+$(document).ready(function() {
 //crocodile gallery
 
 $('#croc').magnificPopup({
@@ -223,4 +224,6 @@ $('#chair-pattern').magnificPopup({
       verticalFit: true, // Fits image in area vertically
       tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
     }
+});
+
 });

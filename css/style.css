@@ -139,7 +139,10 @@ ul, ol {
 
 /* portfolio section css  */
 .main-section {padding-top:200px;   padding-bottom: 200px;}
-.popup-gallery img {padding:5%;}
+.popup-gallery img {    box-shadow: 2px 2px 6px 0px #686565;
+    margin:5%; padding: 0%;
+}
+
 
 /* testimonials section  */
 .card {
