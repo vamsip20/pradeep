@@ -220,9 +220,9 @@
           <div class="col-md-12 col-xl-12">
               <h2 class="text-center pb-3">My Works</h2>
             </div>
-      </div>
-      <div class="popup-gallery text-center">
+      </div>   
 
+      <div class=" text-center">
         <div class="row"> <!--row of images-->
           <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
             <a href="images/hand.jpg" title="hand">
@@ -230,7 +230,7 @@
             </a>
           </div>
           <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a href="images/chair-pattern.jpg" title="chair-pattern">
+            <a id="chair-pattern" title="chair-pattern">
               <img data-src="images/chair-pattern.jpg" alt="chair-pattern" class="img-fluid">
             </a>
           </div>
@@ -240,7 +240,7 @@
             </a>
           </div>
           <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a href="images/office-chair.jpg" title="office-chair">
+            <a id="office-chair" title="office-chair">
               <img data-src="images/office-chair.jpg" alt="office-chair" class="img-fluid">
             </a>
           </div>
@@ -258,12 +258,12 @@
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/plain-chair.jpg" title="plain-chair">
+              <a id="plain-chair" title="plain-chair">
                 <img data-src="images/plain-chair.jpg" alt="plain-chair" class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/chakra.jpg" title="chakra">
+              <a id="chakra" title="chakra">
                 <img data-src="images/chakra.jpg" alt="chakra" class="img-fluid">
               </a>
             </div>
@@ -276,17 +276,17 @@
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/sofa-chair.jpg" title="sofa-chair">
+              <a id="sofa-chair" title="sofa-chair">
                 <img data-src="images/sofa-chair.jpg" alt="sofa-chair" class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/detol.jpg" title="detol">
+              <a title="detol" href="images/detol.jpg">
                 <img data-src="images/detol.jpg" alt="detol" class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/borodon.jpg" title="borodon">
+              <a id="borodon" title="borodon">
                 <img data-src="images/borodon.jpg" alt="borodon" class="img-fluid">
               </a>
             </div>
@@ -294,12 +294,12 @@
           
           <div class="row">          <!--row of images-->
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/crocodile.jpg" title="crocodile">
+              <a title="crocodile" id="croc">
                 <img data-src="images/crocodile.jpg" alt="crocodile" class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a href="images/plane.jpg" title="plane">
+              <a id="plane" title="plane">
                 <img data-src="images/plane.jpg" alt="plane" class="img-fluid">
               </a>
             </div>
@@ -500,9 +500,10 @@ image: {
 }
 });
 
-
 });
  </script>
+
+<script src="js/check.js"></script>
 
   <script>
       const myLazyLoad= new LazyLoad({
