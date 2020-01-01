@@ -22,6 +22,7 @@ html {
 .social-login a{color:#fff !important;  padding:0px 15px;}
 .header-top {background-color: var(--color-first);}
 .pipe::before {content:'|'; color:#fff;}
+.active{ border-bottom: 3px solid var(--color-second);}
 
 .navbar-brand .text {
     font-weight: 500;
@@ -211,12 +212,14 @@ ul, ol {
     .logo_text {font-size: 1.4rem;}
 }
 @media screen and (max-width: 860px) and (min-width:760px){
-    .navbar-brand {max-width: 17%;}
+    .navbar-brand {max-width: 17%;}    
 }
 @media screen and (min-width: 760px) {
     .carousel img {    min-width: 100%;       height: 600px;      }
     .carousel-caption { width:30%;}
     .logo_text {font-size: 1.8rem;}
+    .navbar-nav li {margin: 3% 2.5%;}
+    #navbarContent {padding-left: 70px;}
 }
 @media screen and (min-width: 1080px) {
     .carousel img {height:700px;}
