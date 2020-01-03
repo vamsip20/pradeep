@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+  const myLazyLoad= new LazyLoad({
+    elements_selector:".img-fluid"
+  });
 //crocodile gallery
 
 $('#croc').magnificPopup({
