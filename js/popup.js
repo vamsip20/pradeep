@@ -92,7 +92,12 @@ var borodonarr=[
         src: 'images/borodon-w.jpg',
         title:'borodon wired front',
         class:'img-fluid'
-      }
+      },
+      {
+        src: 'images/borodon-w2.jpg',
+        title:'borodon wired back',
+        class:'img-fluid'
+      },
     ];
     createPopup('borodon',borodonarr);
 
@@ -270,5 +275,35 @@ var hutarr=[
     },           
   ];
   createPopup('hut',hutarr);
+
+//fan gallery
+var fanarr=[
+    { 
+      src: 'images/fan.jpg',
+      title:'fan from front',
+      class:'img-fluid'
+    },
+    { 
+      src: 'images/fan-l.jpg',
+      title:'fan from left',
+      class:'img-fluid'
+    },           
+    { 
+      src: 'images/fan-r.jpg',
+      title:'fan from right',
+      class:'img-fluid'
+    },
+    { 
+      src: 'images/fan-b.jpg',
+      title:'fan from back',
+      class:'img-fluid'
+    },           
+    { 
+      src: 'https://sketchfab.com/models/a47589f139be45f780c46b80e8f3758a/embed',
+      title:'fan 3D model',
+      type :'iframe'
+    },           
+  ];
+  createPopup('fan',fanarr);
 
 });
