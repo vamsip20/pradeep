@@ -201,6 +201,8 @@ ul, ol {
     }
     .navbar-brand {margin-left:3% !important;}
     .navbar-brand img{max-width: 75%;}
+    .popup-gallery img {margin:5% 0%;}
+    #about img {padding:10% 0%;}
     .navbar-brand .text{font-size: 1rem !important;}
     .card .carousel-item {       height: 230px;      }
     .card .carousel-item img{       max-width: 20%;      }

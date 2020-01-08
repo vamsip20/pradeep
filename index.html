@@ -103,7 +103,7 @@
    <!-- this is portfolio section -->
 
    <div id="portfolio">
-    <div class="container p-5">
+    <div class="container">
       <div class="row">
           <div class="col-md-12 col-xl-12">
               <h2 class="text-center pb-3">My Works</h2>
@@ -446,11 +446,27 @@
 
     </div> -->
   </div>
- 
-  <script>
 
-    // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
+<!-- <script src="js/check.js"></script> -->
+<script defer src="js/jquery.min.js"></script>
+<script defer src="js/bootstrap.bundle.min.js"></script>
+<script defer src="js/jquery.magnific-popup.min.js"></script>
+<script defer src="js/lazyload.min.js"></script>
+<script defer src="js/popup.js"></script>
+<script src="js/typed.min.js"></script>
+<script>
+
+  //typing effect will come with this
+var typed3 = new Typed('.element', {
+    strings: ['<i>3D Modeling Artist</i> ', '<i>Freelancer</i>', '<i>Video Editor</i>'],
+    typeSpeed: 60,
+    backSpeed: 10,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+
+   // When the user clicks on the button, scroll to the top of the document
+   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
@@ -472,23 +488,6 @@
           });
         }, false);
       })();
-  </script>
-
-<!-- <script src="js/check.js"></script> -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/lazyload.min.js"></script>
-<script src="js/popup.js"></script>
-<script src="js/typed.min.js"></script>
-<script>
-var typed3 = new Typed('.element', {
-    strings: ['<i>3D Modeling Artist</i> ', '<i>Freelancer</i>', '<i>Video Editor</i>'],
-    typeSpeed: 60,
-    backSpeed: 10,
-    smartBackspace: true, // this is a default
-    loop: true
-  });
 </script>
 
 </body>
