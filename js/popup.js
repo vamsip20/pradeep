@@ -306,4 +306,24 @@ var fanarr=[
   ];
   createPopup('fan',fanarr);
 
+//rustrobo gallery
+var rustroboarr=[
+    { 
+      src: 'images/rustrobo.jpg',
+      title:'robo from front',
+      class:'img-fluid'
+    },
+    { 
+      src: 'images/rustrobo-2.jpg',
+      title:'robo from back',
+      class:'img-fluid'
+    },
+    { 
+      src: 'https://sketchfab.com/models/54bf2821fde249eab1c34dc79b11856a/embed',
+      title:'robo 3D model',
+      type :'iframe'
+    },           
+  ];
+  createPopup('rustrobo',rustroboarr);
+
 });
