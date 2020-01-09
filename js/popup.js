@@ -310,12 +310,7 @@ var fanarr=[
 var rustroboarr=[
     { 
       src: 'images/rustrobo.jpg',
-      title:'robo from front',
-      class:'img-fluid'
-    },
-    { 
-      src: 'images/rustrobo-2.jpg',
-      title:'robo from back',
+      title:'rusted robo image',
       class:'img-fluid'
     },
     { 
