@@ -385,30 +385,6 @@
         </div>
       </div>
     </div>
-    <!-- social icons with text at bottom-->
-    <!-- <div class="row no-gutters social-container">
-      <div class="col">
-        <a class="social-inner" href="#">
-          <i class="fa fa-facebook"></i> Facebook
-        </a>
-      </div>
-      <div class="col">
-        <a class="social-inner" href="#">
-          <i class="fa fa-twitter"></i> Twitter
-        </a>
-      </div>
-      <div class="col">
-        <a class="social-inner" href="#">
-          <i class="fa fa-linkedin"></i> LinkedIn
-        </a>
-      </div>
-      <div class="col">
-        <a class="social-inner" href="#">
-          <img src="images/glassdoor.svg" width="7%"> glassdoor
-        </a>
-      </div>
-
-    </div> -->
   </div>
 
 <!-- <script src="js/check.js"></script> -->
@@ -450,6 +426,7 @@ var typed3 = new Typed('.element', {
                 event.preventDefault();
                 event.stopPropagation();
               }
+              if (form.checkValidity()===true){return true;}
               form.classList.add('was-validated');
             }, false);
           });
