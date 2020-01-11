@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth; overflow-x: hidden;
   }
+  body{overscroll-behavior-x: hidden;}
 
   /* menu bar section  */
 
@@ -200,13 +201,13 @@ ul, ol {
 #world{
     background: linear-gradient(#8ee4ae, #18a7c5);
     width:100%;
-    height:100%;
+    height:75%;
     overflow:hidden;
     }
 
     #instructions{
     position:absolute;
-    top:50%;
+    top:30%;
     margin:9% 5%;
     font-family:sans-serif;    
     color: #000;
@@ -248,6 +249,8 @@ ul, ol {
     .logo_text {font-size: 1.8rem;}
     .navbar-nav li {margin: 3% 2.5%;}
     #navbarContent {padding-left: 70px;}
+    .navbar-brand{margin-left:5%;}
+    .world{height:50%;}
 }
 @media screen and (min-width: 1080px) {
     .carousel img {height:700px;}
