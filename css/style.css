@@ -208,13 +208,17 @@ ul, ol {
     #instructions{
     position:absolute;
     top:30%;
-    margin:9% 5%;
+    padding: 10%;
     font-family:sans-serif;    
-    color: #000;
+    color: #eee;
     text-shadow: 0px 1px 6px #9d9a9a;
     font-size:1.2em;
     text-transform: uppercase;
     text-align : center;
+    }
+
+    .desc{
+        color:#fff;
     }
 
 /* responsiveness css */

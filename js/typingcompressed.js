@@ -1,5 +1,5 @@
 // List of sentences
-var _CONTENT = [ "UI Developer", "Front end Developer", "Web Developer" ];
+var _CONTENT = [ "3D Modeling Artist", "Freelancer", "Video Editor" ];
 
 // Current sentence being processed
 var _PART = 0;
@@ -11,7 +11,7 @@ var _PART_INDEX = 0;
 var _INTERVAL_VAL;
 
 // Element that holds the text
-var _ELEMENT = document.querySelector("#text");
+var _ELEMENT = document.querySelector(".desc");
 
 //type writing speed
 var _SPEED=100;
