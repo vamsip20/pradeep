@@ -499,7 +499,7 @@ var setarr=[
 ];
 createPopup('set',setarr);
 
-//texturing only gallery
+//texturingonly gallery
 var texturearr=[
   {
     src: 'images/texture.png',
