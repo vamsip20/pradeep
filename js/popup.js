@@ -321,4 +321,218 @@ var rustroboarr=[
   ];
   createPopup('rustrobo',rustroboarr);
 
+  
+//car gallery
+var cararr=[
+  {
+    src: 'images/car.png',
+    title:'car front',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/car-B.png',
+    title:'car back',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/car-F.png',
+    title:'car front',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/car-T.png',
+    title:'car top',
+    class:'img-fluid'
+  },
+];
+createPopup('car',cararr);
+
+//exterior gallery
+var exteriorarr=[
+  {
+    src: 'images/exterior02.png',
+    title:'exterior1',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/exterior03.png',
+    title:'exterior2',
+    class:'img-fluid'
+  },
+ 
+];
+createPopup('exterior',exteriorarr);
+
+//bike gallery
+var bikearr=[
+  {
+    src: 'images/bike.png',
+    title:'bike side',
+    class:'img-fluid'
+  },
+  
+];
+createPopup('bike',bikearr);
+
+//drogen gallery
+var drogenarr=[
+  {
+    src: 'images/drogen_01.jpg',
+    title:'drogen',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/drogen_T.png',
+    title:'drogen top',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/drogen_TW.png',
+    title:'drogen top wire',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/drogen-B01.png',
+    title:'drogen back',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/drogen_w.png',
+    title:'drogen wire',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/drogen-B.png',
+    title:'drogen back',
+    class:'img-fluid'
+  },
+];
+createPopup('drogen',drogenarr);
+
+//gun gallery
+var gunarr=[
+  {
+    src: 'images/gun.png',
+    title:'gun',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/gun_01.png',
+    title:'gun_01',
+    class:'img-fluid'
+  },
+ 
+];
+createPopup('gun',gunarr);
+
+
+//ferory gallery
+var feroryarr=[
+  {
+    src: 'images/ferory.png',
+    title:'ferory',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/ferory-frent.png',
+    title:'ferory-frent',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/ferory-top.png',
+    title:'ferory-top',
+    class:'img-fluid'
+  },
+];
+createPopup('ferory',feroryarr);
+
+//hulk gallery
+var hulkarr=[
+  {
+    src: 'images/hulk.png',
+    title:'hulk',
+    class:'img-fluid'
+  },
+];
+createPopup('hulk',hulkarr);
+
+//knife gallery
+var knifearr=[
+  {
+    src: 'images/knife.png',
+    title:'knife',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/knife01.png',
+    title:'knife01',
+    class:'img-fluid'
+  },
+  
+];
+createPopup('knife',knifearr);
+
+//octopus gallery
+var octopusarr=[
+  {
+    src: 'images/octopus.png',
+    title:'octopus',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/octopus_wire.png',
+    title:'octopusW',
+    class:'img-fluid'
+  },
+  
+];
+createPopup('octopus',octopusarr);
+
+//set gallery
+var setarr=[
+  {
+    src: 'images/set.png',
+    title:'set',
+    class:'img-fluid'
+  },
+  
+];
+createPopup('set',setarr);
+
+//texturing only gallery
+var texturearr=[
+  {
+    src: 'images/texture.png',
+    title:'texture',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/texture_back.png',
+    title:'texture_back',
+    class:'img-fluid'
+  },
+  
+];
+createPopup('texture',texturearr);
+
+
+//wolf gallery
+var wolfarr=[
+  {
+    src: 'images/wolf.png',
+    title:'wolf',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/wolf_T.png',
+    title:'texture_back',
+    class:'img-fluid'
+  },
+  {
+    src: 'images/wolf-wire.png',
+    title:'texture_wire',
+    class:'img-fluid'
+  },
+];
+createPopup('wolf',wolfarr);
 });
