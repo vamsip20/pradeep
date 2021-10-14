@@ -12,20 +12,36 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/style.css">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
-    .model-veiwer-example model-viewer{
-      width:100%;
-      height:inherit;
+    .model-veiwer-example model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    h6.heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: .5rem 0;
+      text-shadow: 0 0 5px white;
+      text-transform: capitalize;
+    }
+
+    h6.heading:before {
+      content: ' ';
+      border-bottom: 1px solid #999;
+      position: absolute;
+      left: 1.5rem;
+      right: .5rem;
+      top: 2.5rem;
     }
   </style>
- </head>
+</head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-expand-md">
     <!-- Menu bar-->
-    <a class="navbar-brand" href="index.html" >
+    <a class="navbar-brand" href="index.html">
       <!-- <img src="images/logo_only.png" alt="Logo" class="img-fluid"> -->
       <!-- <span class="text">Vamsi Pradeep K </span> -->
     </a>
@@ -62,205 +78,220 @@
 
   <!-- This Is Home Section-->
   <div id="home">
-       <div id="world"></div>
-       <div id="instructions">     
-          <h2>K Vamsi pradeep</h2>
-          <h4 class="desc"></h4>     
-       </div>
+    <div id="world"></div>
+    <div id="instructions">
+      <h2>K Vamsi pradeep</h2>
+      <h4 class="desc"></h4>
+    </div>
 
   </div>
 
-   <!-- this is portfolio section -->
+  <!-- this is portfolio section -->
 
-   <div id="portfolio ">
+  <div id="portfolio">
     <div class="container pt-5">
       <div class="row">
-          <div class="col-md-12 col-xl-12">
-              <h2 class="text-center pb-3">My Works</h2>
-              <p class="text-center">Click on the image to load remaining images of that work.</p>
-            </div>
-      </div>   
-
-      <div class="popup-gallery text-center">      <!-- my works shows here -->
-        <div class="row"> <!--row of images-->
-          <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a id="hand" title="hand">
-              <img data-src="images/hand.jpg" alt="hand" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a id="chair-pattern" title="chair-pattern">
-              <img data-src="images/chair-pattern.jpg" alt="chair-pattern" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a id="home-t" title="home">
-              <img data-src="images/home-t.jpg" alt="home" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-            <a id="office-chair" title="office-chair">
-              <img data-src="images/office-chair.jpg" alt="office-chair" class="img-fluid">
-            </a>
-          </div>
-                <!--row of images-->
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="cage" title="cage">
-                <img data-src="images/cage.jpg" alt="cage" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="cola" title="cola">
-                <img data-src="images/cola.jpg" alt="cola" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="plain-chair" title="plain-chair">
-                <img data-src="images/plain-chair.jpg" alt="plain-chair" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="chakra" title="chakra">
-                <img data-src="images/chakra.jpg" alt="chakra" class="img-fluid">
-              </a>
-            </div>
-                <!--row of images-->
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="hut" title="hut">
-                <img data-src="images/hut.jpg" alt="hut" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="sofa-chair" title="sofa-chair">
-                <img data-src="images/sofa-chair.jpg" alt="sofa-chair" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a title="detol" id="detol">
-                <img data-src="images/detol.jpg" alt="detol" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="fan" title="fan">
-                <img data-src="images/fan.jpg" alt="fan" class="img-fluid">
-              </a>
-            </div>
-                   <!--row of images-->
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="borodon" title="borodon">
-                <img data-src="images/borodon.jpg" alt="borodon" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a title="crocodile" id="croc">
-                <img data-src="images/crocodile.jpg" alt="crocodile" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="plane" title="plane">
-                <img data-src="images/plane.jpg" alt="plane" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="rustrobo" title="rustrobo">
-                <img data-src="images/rustrobo.jpg" alt="rustrobo" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="car" title="car">
-                <img data-src="images/car.png" alt="car" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="exterior" title="exterior">
-                <img data-src="images/exterior02.png" alt="exterior" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="bike" title="bike">
-                <img data-src="images/bike.png" alt="bike" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="drogen" title="drogen">
-                <img data-src="images/drogen_01.jpg" alt="drogen" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="gun" title="gun">
-                <img data-src="images/gun.png" alt="gun" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="ferory" title="ferory">
-                <img data-src="images/ferory.png" alt="ferory" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="hulk" title="hulk">
-                <img data-src="images/hulk.png" alt="hulk" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="knife" title="knife">
-                <img data-src="images/knife.png" alt="knife" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="octopus" title="octopus">
-                <img data-src="images/octopus.png" alt="octopus" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="set" title="set">
-                <img data-src="images/set.png" alt="set" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="texture" title="texture">
-                <img data-src="images/texture.png" alt="texture" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
-              <a id="wolf" title="wolf">
-                <img data-src="images/wolf.png" alt="wolf" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          
+        <div class="col-md-12 col-xl-12">
+          <h2 class="text-center pb-3">My Works</h2>
+          <p class="text-center">Click on the image to load remaining images of that work.</p>
         </div>
+      </div>
+
+      <!-- my works shows here -->
+      <div class="popup-gallery text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="heading">models only</h6>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="fan" title="fan">
+                  <img data-src="images/fan.jpg" alt="fan" class="img-fluid">
+                </a>
+              </div>
+              <!--row of images-->
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="borodon" title="borodon">
+                  <img data-src="images/borodon.jpg" alt="borodon" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a title="crocodile" id="croc">
+                  <img data-src="images/crocodile.jpg" alt="crocodile" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="plane" title="plane">
+                  <img data-src="images/plane.jpg" alt="plane" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="rustrobo" title="rustrobo">
+                  <img data-src="images/rustrobo.jpg" alt="rustrobo" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="car" title="car">
+                  <img data-src="images/car.png" alt="car" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="exterior" title="exterior">
+                  <img data-src="images/exterior02.png" alt="exterior" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="bike" title="bike">
+                  <img data-src="images/bike.png" alt="bike" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="drogen" title="drogen">
+                  <img data-src="images/drogen_01.jpg" alt="drogen" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="gun" title="gun">
+                  <img data-src="images/gun.png" alt="gun" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="ferory" title="ferory">
+                  <img data-src="images/ferory.png" alt="ferory" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="hulk" title="hulk">
+                  <img data-src="images/hulk.png" alt="hulk" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="knife" title="knife">
+                  <img data-src="images/knife.png" alt="knife" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="octopus" title="octopus">
+                  <img data-src="images/octopus.png" alt="octopus" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="set" title="set">
+                  <img data-src="images/set.png" alt="set" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="wolf" title="wolf">
+                  <img data-src="images/wolf.png" alt="wolf" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="hut" title="hut">
+                  <img data-src="images/hut.jpg" alt="hut" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="sofa-chair" title="sofa-chair">
+                  <img data-src="images/sofa-chair.jpg" alt="sofa-chair" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h6 class="heading">model with textures</h6>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="texture" title="texture">
+                  <img data-src="images/texture.png" alt="texture" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="hand" title="hand">
+                  <img data-src="images/hand.jpg" alt="hand" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="chair-pattern" title="chair-pattern">
+                  <img data-src="images/chair-pattern.jpg" alt="chair-pattern" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="home-t" title="home">
+                  <img data-src="images/home-t.jpg" alt="home" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="office-chair" title="office-chair">
+                  <img data-src="images/office-chair.jpg" alt="office-chair" class="img-fluid">
+                </a>
+              </div>
+              <!--row of images-->
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="cage" title="cage">
+                  <img data-src="images/cage.jpg" alt="cage" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="cola" title="cola">
+                  <img data-src="images/cola.jpg" alt="cola" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="plain-chair" title="plain-chair">
+                  <img data-src="images/plain-chair.jpg" alt="plain-chair" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a id="chakra" title="chakra">
+                  <img data-src="images/chakra.jpg" alt="chakra" class="img-fluid">
+                </a>
+              </div>
+              <!--row of images-->
+
+              <div class="col-md-4 col-sm-6 col-lg-4 col-xs-12">
+                <a title="detol" id="detol">
+                  <img data-src="images/detol.jpg" alt="detol" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-  </div>
+  <!-- </div> -->
 
   <!-- This Is testimonials Section-->
   <div id="testimonials">
-      <div class="row p-5 box pl-0">
-          <div class="col-md-12 col-xl-12">
-              <h2 class="text-center pb-3">Testimonials</h2>
-            </div>
-          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto">
-            
-            <h3 style="padding-top:25%">Gives me hope</h3>
-            <small>" I will refer everyone I know. I was amazed at the quality of 3D Models. It's exactly what I've been looking for "</small>
-            <small class="mute"> - Anil Kumar . </small>
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto mb-5 mt-5">
-            
-            <h3 >Happy with work</h3>
-            <small>" I worked with many freelancers who charges more money for medium quality, but I got quality work for reasonable price here. "</small>
-            <small class="mute"> - Srinu . </small>
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto">
-           
-            <h3 style="padding-top:25%">Great quality</h3>
-            <small>" we have to give several 3D models to our clients and we got the great quality models from here, so we started working on bulks now. "</small>
-            <small class="mute"> - vijay . </small>
-          </div>
-                  
-        </div>
+    <div class="row p-5 box pl-0">
+      <div class="col-md-12 col-xl-12">
+        <h2 class="text-center pb-3">Testimonials</h2>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto">
+
+        <h3 style="padding-top:25%">Gives me hope</h3>
+        <small>" I will refer everyone I know. I was amazed at the quality of 3D Models. It's exactly what I've been
+          looking for "</small>
+        <small class="mute"> - Anil Kumar . </small>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto mb-5 mt-5">
+
+        <h3>Happy with work</h3>
+        <small>" I worked with many freelancers who charges more money for medium quality, but I got quality work for
+          reasonable price here. "</small>
+        <small class="mute"> - Srinu . </small>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 p-5 shadow col-xs-12 text-center mx-auto">
+
+        <h3 style="padding-top:25%">Great quality</h3>
+        <small>" we have to give several 3D models to our clients and we got the great quality models from here, so we
+          started working on bulks now. "</small>
+        <small class="mute"> - vijay . </small>
+      </div>
+
+    </div>
   </div>
- 
+
   <!-- This Is Service Section-->
   <div id="services">
     <div class="container pt-5 pb-5">
@@ -332,8 +363,11 @@
         <div class="col-md-6 col-sm-6 col-xl-6">
           <div class="about-text">
 
-            <p class="text-justify"> i am a 3D Modeling Artist with 2+ years of experience and consistently pushes ( myself ) towards perfection and innovation using Latest tools. I’m Skilled in creating high quality yet low-poly 3D Models using Maya. Created high-quality, fully optimized 3D models in zoology for VR Learning App practically  </p>
-           
+            <p class="text-justify"> i am a 3D Modeling Artist with 3+ years of experience and consistently pushes (
+              myself ) towards perfection and innovation using Latest tools. I’m Skilled in creating high quality yet
+              low-poly 3D Models using Maya. Created high-quality, fully optimized 3D models in zoology for VR Learning
+              App practically </p>
+
           </div>
         </div>
       </div>
@@ -342,77 +376,97 @@
 
   <!-- This Is contact Section-->
   <div id="contact">
-   <div class="container pt-5 pb-5">
-     <div class="row">
+    <div class="container pt-5 pb-5">
+      <div class="row">
         <div class="col-md-12 col-xl-12">
-            <h2 class="text-center pb-3">Contact Us</h2>
+          <h2 class="text-center pb-3">Contact Us</h2>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <form id='contactform' class="needs-validation shadow" action='mailto:kudumulap20@gmail.com'
+                enctype='multipart/form-data' method="POST" name='contact-form'>
+
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required
+                      pattern="[A-Za-z]{3,}">
+                    <div class="valid-tooltip">Valid.</div>
+                    <div class="invalid-tooltip">Name should greater than 3 characters</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter Email" required
+                      pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <div class="valid-tooltip">Valid.</div>
+                    <div class="invalid-tooltip">Enter Valid Email ID</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-mobile" style="padding-left:40%"></i></span>
+                    </div>
+                    <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile No"
+                      required pattern="^[789]\d{9}$">
+                    <div class="valid-tooltip">Valid.</div>
+                    <div class="invalid-tooltip">Mobile must be 10 characters</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+                    <textarea class="form-control" id="comment" placeholder="Enter Comments" name="comment" rows="8"
+                      required minlength="10"></textarea>
+                    <div class="valid-tooltip">Valid.</div>
+                    <div class="invalid-tooltip">comments must greater than 10 characters</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="form-control sbt" name="submit"> <i class="fa fa-paper-plane"></i> Send
+                  </button>
+                </div>
+
+              </form>
+            </div>
           </div>
-       <div class="col-md-2"></div>
-       <div class="col-md-8">
-         <div class="row">
-           <div class="col-md-12">
-             <form id='contactform'class="needs-validation shadow" action='vamsip20@gmail.com' enctype='multipart/form-data' method="POST" name='contact-form' >
-              
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                  </div>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required pattern="[A-Za-z]{3,}">
-                  <div class="valid-tooltip">Valid.</div>
-                  <div class="invalid-tooltip">Name should greater than 3 characters</div>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                  </div>
-                  <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter Email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                  <div class="valid-tooltip">Valid.</div>
-                  <div class="invalid-tooltip">Enter Valid Email ID</div>
-                </div>
-              </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-mobile" style="padding-left:40%"></i></span>
-                  </div>
-                  <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile No" required pattern="^[789]\d{9}$">
-                  <div class="valid-tooltip">Valid.</div>
-                  <div class="invalid-tooltip">Mobile must be 10 characters</div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="input-group">
-                  <textarea class="form-control" id="comment" placeholder="Enter Comments" name="comment" rows="8" required minlength="10"></textarea>
-                  <div class="valid-tooltip">Valid.</div>
-                  <div class="invalid-tooltip">comments must greater than 10 characters</div>
-                </div>
-                </div>
-
-              <div class="form-group">
-                  <button type="submit" class="form-control sbt" name="submit" > <i class="fa fa-paper-plane"></i> Send </button>
-              </div>
-              
-             </form>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
+  <!-- model testing  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="model-veiwer-example">
+          <model-viewer src="./model/scene.gltf" alt="A 3D model of an astronaut" ar
+            ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls>
+          </model-viewer>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- this is footer -->
   <div class="section footer-classic context-dark bg-image" style="background: #2d3246;">
     <div class="container pt-5">
-        <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i> </a>
-      <div class="row row-30"> 
+      <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i> </a>
+      <div class="row row-30">
         <div class="col-md-4 col-xl-5">
-          <div class="pr-xl-4"><a class="brand" href="#" style="text-decoration:none;"><img src="images/logo_only.png " alt="logo"> <span class="logo_text" >K Vamsi Pradeep</span></a>
+          <div class="pr-xl-4"><a class="brand" href="#" style="text-decoration:none;"><img src="images/logo_only.png "
+                alt="logo"> <span class="logo_text">K Vamsi Pradeep</span></a>
             <p></p>
             <!-- Rights-->
             <p>&copy; Copyright 2019-2020. All Rights Reserved.</p>
@@ -430,7 +484,7 @@
           </dl>
           <dl class="contact-list">
             <dt>Phones:</dt>
-            <dd><a href="tel:91 8520889953">+91 8520889953</a> 
+            <dd><a href="tel:91 8520889953">+91 8520889953</a>
             </dd>
           </dl>
         </div>
@@ -447,57 +501,56 @@
     </div>
   </div>
 
-<!-- <script src="js/check.js"></script> -->
-<script defer src="js/jquery.min.js"></script>
-<script defer src="js/bootstrap.bundle.min.js"></script>
-<script defer src="js/jquery.magnific-popup.min.js"></script>
-<script defer src="js/lazyload.min.js"></script>
-<script defer src="js/popup.js"></script>
-<script src="js/typingcompressed.js"></script>
+  <!-- <script src="js/check.js"></script> -->
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/jquery.magnific-popup.min.js"></script>
+  <script defer src="js/lazyload.min.js"></script>
+  <script defer src="js/popup.js"></script>
+  <script src="js/typingcompressed.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<script src="js/extras/three.min.js"></script>
-<script src="js/pitta.js"></script>
-<script>
+  <!-- <script src="js/extras/three.min.js"></script> -->
+  <!-- <script src="js/pitta.js"></script> -->
+  <script>
 
-//   //typing effect will come with this
-// var typed3 = new Typed('.element', {
-//     strings: ['<i>3D Modeling Artist</i> ', '<i>Freelancer</i>', '<i>Video Editor</i>'],
-//     typeSpeed: 60,
-//     backSpeed: 10,
-//     smartBackspace: true, // this is a default
-//     loop: true
-//   });
+    //   //typing effect will come with this
+    // var typed3 = new Typed('.element', {
+    //     strings: ['<i>3D Modeling Artist</i> ', '<i>Freelancer</i>', '<i>Video Editor</i>'],
+    //     typeSpeed: 60,
+    //     backSpeed: 10,
+    //     smartBackspace: true, // this is a default
+    //     loop: true
+    //   });
 
-   // When the user clicks on the button, scroll to the top of the document
-   function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-      // Disable form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Get the forms we want to add validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-               // event.preventDefault();
-                event.stopPropagation();
-              }
-              if (form.checkValidity()===true){return true;}
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-</script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    // Disable form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              // event.preventDefault();
+              event.stopPropagation();
+            }
+            if (form.checkValidity() === true) { form.submit(); return true; }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 
-<div class="model-veiwer-example">
-  <model-viewer src="./model/scene.gltf" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look"
-        environment-image="neutral" auto-rotate camera-controls></model-viewer>
-</div>
+
+
 </body>
 
 </html>
