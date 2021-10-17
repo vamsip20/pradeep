@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .white-popup {
+      position: relative;
+      background: #FFF;
+      width: auto;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -338,9 +346,8 @@
         <div class="col-md-6 col-sm-6 col-xl-6">
           <img data-src="images/myimage.jpg" alt="My Image" class="img-fluid">
         </div>
-        <div class="col-md-6 col-sm-6 col-xl-6">
+        <div class="col-md-6 col-sm-6 col-xl-6" style="align-self: center;">
           <div class="about-text">
-
             <p class="text-justify"> i am a 3D Modeling Artist with 3+ years of experience and consistently pushes (
               myself ) towards perfection and innovation using Latest tools. I’m Skilled in creating high quality yet
               low-poly 3D Models using Maya. Created high-quality, fully optimized 3D models in zoology for VR Learning
@@ -428,12 +435,13 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="model-veiwer-example">
-          <!-- <a href="./model/gltf/gltf/untitled.gltf"></a> -->
+        <div class="model-veiwer-example white-popup mfp-hide" id="test-popup">
           <model-viewer src="./model/gltf/gltf/untitled.gltf" alt="A 3D model of an astronaut" ar
             ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls>
           </model-viewer>
         </div>
+        <a href="#test-popup" class="open-popup-link" style="display: block;text-align: center;"
+          onclick="document.getElementById('test-popup').classList.remove('mfp-hide')">Show 3D Model</a>
       </div>
     </div>
   </div>
@@ -500,6 +508,11 @@
       backSpeed: 10,
       smartBackspace: true, // this is a default
       loop: true
+    });
+
+    $('.open-popup-link').magnificPopup({
+      type: 'inline',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });
 
     // When the user clicks on the button, scroll to the top of the document
