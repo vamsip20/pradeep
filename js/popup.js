@@ -299,10 +299,15 @@ var fanarr=[
       class:'img-fluid'
     },           
     { 
-      src: 'https://sketchfab.com/models/a47589f139be45f780c46b80e8f3758a/embed',
+      src: 'https://www.artstation.com/artwork/yb4r29',
       title:'fan 3D model',
       type :'iframe'
     },           
+    // { 
+    //   src: 'https://sketchfab.com/models/a47589f139be45f780c46b80e8f3758a/embed',
+    //   title:'fan 3D model',
+    //   type :'iframe'
+    // },           
   ];
   createPopup('fan',fanarr);
 
